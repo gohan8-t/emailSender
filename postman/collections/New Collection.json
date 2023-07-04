@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "fb6dd480-f809-476e-be98-bea81d67b812",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "28305608-fb6dd480-f809-476e-be98-bea81d67b812"
+	},
+	"item": [
+		{
+			"name": "https://graph.microsoft.com/v1.0/me/sendMail",
+			"id": "44b42ba7-ed8e-4b67-b9ba-8c8ac660072f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "Mail.Send",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "qNy8Q~Qt5yhuhcbnWzUS.GVR.xOPZ3VcVjTh5a5y",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "6793b787-719d-42a6-9293-4eef7a488470",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://app.getpostman.com/oauth/callback",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PostmanOutlook",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"paul8tsel@gmail.com\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"tselanapaul@gmail.com\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/me/sendMail",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"me",
+						"sendMail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://graph.microsoft.com/v1.0/me/sendMail Copy",
+			"id": "35be827a-c2e4-46c8-af67-76ffbc098d3f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "Mail.Send",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "qNy8Q~Qt5yhuhcbnWzUS.GVR.xOPZ3VcVjTh5a5y",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "6793b787-719d-42a6-9293-4eef7a488470",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://app.getpostman.com/oauth/callback",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PostmanOutlook",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"paul8tsel@gmail.com\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"tselanapaul@gmail.com\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/me/sendMail",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"me",
+						"sendMail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://graph.microsoft.com/v1.0/me/sendMail",
+			"id": "1ca803dd-a497-42f7-a061-ea1e9914fbea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "Mail.Send",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "qNy8Q~Qt5yhuhcbnWzUS.GVR.xOPZ3VcVjTh5a5y",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "6793b787-719d-42a6-9293-4eef7a488470",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://app.getpostman.com/oauth/callback",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PostmanOutlook",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"paul8tsel@gmail.com\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"tselanapaul@gmail.com\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/me/sendMail",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"me",
+						"sendMail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
